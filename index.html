@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Menarik</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen text-white font-sans">
+
+  <!-- Background -->
+  <div class="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+
+  <!-- Header -->
+  <header class="p-4 bg-opacity-80 bg-black">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Presentasi PWC</h1>
+      <nav>
+        <ul class="flex space-x-4 text-sm md:text-base gap-[40px]">
+          <li><a href="#about" class="hover:underline">Tentang</a></li>
+          <li><a href="#services" class="hover:underline">Layanan</a></li>
+          <li><a href="#contact" class="hover:underline">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex items-center justify-center h-screen">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl font-bold">Selamat Datang di Website Kami</h2>
+      <p class="mt-4 text-lg md:text-xl">Kami memberikan layanan terbaik untuk kebutuhan Anda.</p>
+      <button id="learnMore" class="mt-6 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded">Pelajari Lebih Lanjut</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+      <p class="text-lg leading-relaxed text-gray-200">Kami adalah tim yang berdedikasi untuk membantu Anda mencapai tujuan bisnis Anda dengan solusi inovatif.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-black bg-opacity-80">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Layanan Kami</h2>
+      <div id="serviceCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black">
+        <!-- Kartu Layanan akan dimasukkan melalui JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+      <form id="contactForm" class="space-y-4">
+        <input type="text" id="name" placeholder="Nama Anda" class="w-full px-4 py-2 rounded bg-white text-black">
+        <input type="email" id="email" placeholder="Email Anda" class="w-full px-4 py-2 rounded bg-white text-black">
+        <textarea id="message" rows="4" placeholder="Pesan Anda" class="w-full px-4 py-2 rounded bg-white text-black"></textarea>
+        <button type="submit" class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-black bg-opacity-90 text-center text-sm">
+    <p>&copy; 2024 Brand Name. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
